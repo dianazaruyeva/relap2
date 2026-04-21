@@ -1,0 +1,2408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 768px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(90deg, #c86dd7 0%, #3023ae 100%);
+}
+
+/* HEADER */
+.header {
+  position: absolute;
+  top: 30px;
+  left: 135px;
+  right: 135px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 258px;
+}
+
+.nav a {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 0.8;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 48px;
+  border-radius: 999px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.btn-outline {
+  margin-left: auto;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-primary {
+  background: #ffc400;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(255, 196, 0, 0.18);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+/* LEFT CONTENT */
+.hero-content {
+  position: absolute;
+  top: 228px;
+  left: 135px;
+  z-index: 5;
+}
+
+.hero-content h1 {
+  max-width: 335px;
+  font-family: "Poppins", sans-serif;
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero-content p {
+  max-width: 370px;
+  margin-top: 26px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero-content .btn-primary {
+  margin-top: 34px;
+}
+
+/* HERO IMAGE */
+.hero-illustration {
+  position: absolute;
+  top: 142px;
+  left: 602px;
+  width: 704px;
+  z-index: 3;
+}
+
+.hero-illustration img {
+  width: 100%;
+  display: block;
+}
+
+/* SOCIAL ICONS */
+.socials {
+  position: absolute;
+  left: 1193px;
+  top: 688px;
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1.8;
+}
+
+.social-icon:first-child svg,
+.social-icon:nth-child(2) svg {
+  fill: #ffffff;
+  stroke: none;
+}
+
+/* DECORATIVE CIRCLES */
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: linear-gradient(180deg, #3023ae 0%, #c86dd7 100%);
+  z-index: 1;
+}
+
+.bg-circle--top-small {
+  width: 78px;
+  height: 78px;
+  top: 53px;
+  left: 1411px;
+}
+
+.bg-circle--top-right {
+  width: 156px;
+  height: 156px;
+  top: 180px;
+  left: 1147px;
+}
+
+.bg-circle--bottom-left {
+  width: 100px;
+  height: 100px;
+  top: 721px;
+  left: 552px;
+}
+
+.bg-circle--bottom-right {
+  width: 396px;
+  height: 396px;
+  top: 506px;
+  left: 1178px;
+}
+
+/* RESPONSIVE */
+
+/* replace old Source Sans import with this one in <head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+*/
+
+/* PAGE 2 */
+.page-two {
+  width: 100%;
+  max-width: 1440px;
+  height: 768px;
+  margin: 0 auto;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-two__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* LEFT SIDE */
+.page-two__content {
+  position: absolute;
+  left: 135px;
+  top: 141px;
+  width: 498px;
+}
+
+.page-two__eyebrow {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.page-two__title {
+  margin-top: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.page-two__accordion {
+  margin-top: 46px;
+}
+
+.page-two__item {
+  position: relative;
+}
+
+.page-two__item + .page-two__item {
+  margin-top: 24px;
+}
+
+.page-two__trigger {
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.page-two__trigger--active {
+  position: relative;
+  z-index: 2;
+}
+
+.page-two__line {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 161px;
+  height: 8px;
+  background: #c86dd7;
+  z-index: 1;
+}
+
+.page-two__text {
+  width: 470px;
+  margin-top: 18px;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.page-two__arrow {
+  position: relative;
+  width: 10px;
+  height: 6px;
+  flex: 0 0 10px;
+}
+
+.page-two__arrow::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  transform: rotate(45deg);
+}
+
+.page-two__arrow--up::before {
+  top: 2px;
+  transform: rotate(-135deg);
+}
+
+/* RIGHT SIDE */
+.page-two__media {
+  position: absolute;
+  inset: 0;
+}
+
+.page-two__rectangle {
+  position: absolute;
+  left: 735px;
+  top: 128px;
+  width: 705px;
+  height: 544px;
+  display: block;
+  object-fit: cover;
+}
+
+.page-two__bitmap {
+  position: absolute;
+  left: 768px;
+  top: 96px;
+  width: 672px;
+  height: 544px;
+  display: block;
+  object-fit: cover;
+}
+
+.page-two__play {
+  position: absolute;
+  left: 696px;
+  top: 320px;
+  width: 116px;
+  height: 116px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.102);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.page-two__play-triangle {
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-left: 20px solid #c86dd7;
+  margin-left: 6px;
+}
+
+/* desktop exact look, simple fallback for small screens */
+
+/* PAGE 3 */
+.page-three {
+  width: 100%;
+  max-width: 1440px;
+  height: 768px;
+  top: 1536px;
+  margin: 0 auto;
+  background: #fdf2ff;
+}
+
+.page-three__container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 61px;
+}
+
+.page-three__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.page-three__left {
+  width: 431px;
+}
+
+.page-three__eyebrow {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.page-three__title {
+  margin-top: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0;
+  color: #333333;
+}
+
+.page-three__description {
+  width: 570px;
+  margin-top: 7px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.page-three__tabs {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 55px;
+}
+
+.page-three__tab {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.page-three__tab--active {
+  font-weight: 600;
+  color: #333333;
+}
+
+.page-three__tab:not(.page-three__tab--active) {
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.page-three__gallery {
+  display: flex;
+  gap: 30px;
+  margin-top: 42px;
+}
+
+.page-three__card {
+  position: relative;
+  width: 370px;
+  height: 272px;
+  overflow: hidden;
+  flex: 0 0 370px;
+}
+
+.page-three__card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.page-three__card--double {
+  position: relative;
+  width: 370px;
+  height: 272px;
+  overflow: hidden;
+}
+
+.page-three__img-base,
+.page-three__img-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 370px;
+  height: 272px;
+  object-fit: cover;
+  display: block;
+}
+
+.page-three__img-base {
+  z-index: 1;
+}
+
+.page-three__img-top {
+  z-index: 2;
+}
+
+.page-three__overlay-text {
+  position: absolute;
+  left: 32px;
+  bottom: 26px;
+  z-index: 3;
+}
+
+.page-three__overlay-text h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.page-three__overlay-text p {
+  margin: 9px 0 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-three__button {
+  width: 170px;
+  height: 48px;
+  margin: 36px auto 0;
+  border-radius: 999px;
+  background: #c86dd7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.page-three__button:hover {
+  background: #bf60cf;
+}
+
+/* responsive */
+
+/* PAGE 4 */
+.page-four {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 768px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: visible;
+  z-index: 2;
+}
+
+.page-four__container {
+  width: 1122px;
+  margin: 0 auto;
+  padding-top: 71px;
+}
+
+.page-four__title {
+  width: 307px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #333333;
+}
+
+.page-four__subtitle {
+  width: 570px;
+  margin: 23px auto 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.page-four__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 322px);
+  column-gap: 78px;
+  row-gap: 72px;
+  justify-content: center;
+  margin-top: 72px;
+  align-items: start;
+}
+
+.feature-card {
+  width: 322px;
+  text-align: center;
+}
+
+.feature-card--active {
+  width: 370px;
+  height: 224px;
+  margin-top: -30px;
+  padding: 30px 24px 0;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0995);
+  justify-self: center;
+}
+
+.feature-card__icon {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 13px;
+}
+
+.feature-card--active .feature-card__icon {
+  margin-bottom: 13px;
+}
+
+.icon-layer {
+  position: absolute;
+  display: block;
+}
+
+.icon-layer--back {
+  z-index: 1;
+}
+
+.icon-layer--mid {
+  z-index: 2;
+}
+
+.icon-layer--front {
+  z-index: 3;
+}
+
+.icon-layer--top {
+  z-index: 4;
+}
+
+/* ICON 1 */
+.icon-consequuntur .icon-layer--back {
+  width: 41.6px;
+  height: 44px;
+  left: 0;
+  top: 2px;
+}
+
+.icon-consequuntur .icon-layer--front {
+  width: 42px;
+  height: 48px;
+  left: 6px;
+  top: 0;
+}
+
+/* ICON 2 */
+.icon-voluptatem .icon-layer--back {
+  width: 42px;
+  height: 42px;
+  left: 0;
+  top: 0;
+}
+
+.icon-voluptatem .icon-layer--front {
+  width: 40px;
+  height: 40px;
+  left: 8px;
+  top: 6px;
+}
+
+/* ICON 3 */
+.icon-quisquam .icon-layer--back {
+  width: 43.95px;
+  height: 31.75px;
+  top: -10px;
+  left: 1px;
+}
+
+.icon-quisquam .icon-layer--front {
+  width: 44px;
+  height: 26px;
+  left: 4px;
+  top: 9px;
+}
+
+/* ICON 4 */
+.icon-aliquid .icon-layer--back {
+  width: 45.86px;
+  height: 48px;
+  right: 11px;
+  bottom: 4px;
+}
+
+.icon-aliquid .icon-layer--front {
+  width: 26px;
+  height: 33.8px;
+  left: 11px;
+  top: 7px;
+}
+
+/* ICON 5 */
+.icon-excepteur .icon-layer--back {
+  width: 28.64px;
+  height: 48px;
+  left: 10px;
+  top: 0;
+}
+
+.icon-excepteur .icon-layer--front {
+  width: 44px;
+  height: 35.12px;
+  left: 2px;
+  top: 6px;
+}
+
+/* ICON 6 */
+.icon-accusamus .icon-layer--back {
+  width: 41.67px;
+  height: 33.45px;
+  left: 1px;
+  top: 9px;
+}
+
+.icon-accusamus .icon-layer--mid {
+  width: 35.42px;
+  height: 35.55px;
+  left: 13px;
+  top: 1px;
+}
+
+.icon-accusamus .icon-layer--top {
+  width: 23.98px;
+  height: 24.16px;
+  left: 19px;
+  top: 8px;
+}
+
+.feature-card__title {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333333;
+}
+
+.feature-card__title--underline {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.feature-card__title--underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 8px;
+  background: #c86dd7;
+  z-index: -1;
+}
+
+.feature-card__text {
+  width: 322px;
+  margin: 10px auto 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.feature-card--active .feature-card__text {
+  margin-top: 8px;
+}
+
+.page-four__circle {
+  position: absolute;
+  left: 547px;
+  bottom: -51px;
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #3023AE 0%, #C86DD7 100%);
+  z-index: 5;
+}
+/* ============================================================
+   PAGES 5-8 + FOOTER (merged from second part)
+   ============================================================ */
+
+/* ============================================================
+   Seam oval — decorative 100×100 circle between PAGE 4 and PAGE 5.
+   ============================================================ */
+.seam-oval {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.seam-oval__circle {
+  position: absolute;
+  top: -30px;
+  left: 494px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  opacity: 1;
+}
+
+/* ============================================================
+   PAGE 5 — Temporibus quibusdam
+   ============================================================ */
+.page-five {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 768px;
+  margin: 0 auto;
+  background: #3023AE;
+  overflow: hidden;
+}
+
+.page-five__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-five__eyebrow {
+  position: absolute;
+  top: 173px;
+  left: 835px;
+  width: 106px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.page-five__title {
+  position: absolute;
+  top: 215px;
+  left: 835px;
+  width: 359px;
+  height: 128px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #FFFFFF;
+}
+
+.page-five__text {
+  position: absolute;
+  top: 366px;
+  left: 835px;
+  width: 470px;
+  height: 82px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.page-five__button {
+  position: absolute;
+  top: 480px;
+  left: 835px;
+  width: 170px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFC300;
+  border-radius: 999px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.page-five__button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.page-five__oval {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+}
+
+.page-five__oval--corner {
+  width: 323px;
+  height: 323px;
+  top: 567px;
+  left: -119px;
+}
+
+.page-five__oval--top {
+  display: none;
+}
+
+.page-five__oval--bottom {
+  width: 140px;
+  height: 140px;
+  top: 718px;
+  left: 650px;
+}
+
+@keyframes page-five-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+.page-five__marble {
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  top: 176px;
+  left: 235px;
+  mix-blend-mode: screen;
+  opacity: 0.55;
+}
+
+.page-five__avatar {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.page-five__avatar--1 {
+  width: 170px;
+  height: 170px;
+  top: 160px;
+  left: 204px;
+  box-shadow: 16px 16px 48px 0px rgba(0, 0, 0, 0.4);
+}
+
+.page-five__avatar--2 {
+  width: 114px;
+  height: 114px;
+  top: 391px;
+  left: 235px;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.4);
+}
+
+.page-five__avatar--3 {
+  width: 82px;
+  height: 82px;
+  top: 474px;
+  left: 453px;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.4);
+}
+
+.page-five__avatar--4 {
+  width: 50px;
+  height: 50px;
+  top: 398px;
+  left: 567px;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.4);
+}
+
+.page-five__avatar--5 {
+  width: 114px;
+  height: 114px;
+  top: 216px;
+  left: 521px;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================
+   PAGE 6 — Officis debitis
+   ============================================================ */
+.page-six {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 768px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.page-six__title {
+  position: absolute;
+  top: 71px;
+  left: 525px;
+  width: 392px;
+  height: 64px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  color: #333333;
+}
+
+.page-six__subtitle {
+  position: absolute;
+  top: 158px;
+  left: 435px;
+  width: 570px;
+  height: 50px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.page-six__card {
+  position: absolute;
+  top: 272px;
+  width: 370px;
+  height: 272px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 16px 16px 48px 0px rgba(0, 0, 0, 0.1);
+}
+
+.page-six__card--1 { left: 135px; }
+.page-six__card--2 { left: 535px; }
+.page-six__card--3 { left: 935px; }
+
+.page-six__avatar {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.page-six__quote {
+  position: absolute;
+  top: 110px;
+  left: 32px;
+  width: 306px;
+  height: 80px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  opacity: 0.5;
+}
+
+.page-six__name {
+  position: absolute;
+  top: 206px;
+  left: 32px;
+  height: 24px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.page-six__logo {
+  position: absolute;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.page-six__logo:hover {
+  opacity: 1;
+}
+
+.page-six__logo--1 { top: 641px; left: 156px;  width: 113px; height: 37px; }
+.page-six__logo--2 { top: 637px; left: 356px;  width: 128px; height: 40px; }
+.page-six__logo--3 { top: 640px; left: 582px;  width: 73px;  height: 35px; }
+.page-six__logo--4 { top: 649px; left: 742px;  width: 150px; height: 17px; }
+.page-six__logo--5 { top: 646px; left: 973px;  width: 95px;  height: 28px; }
+.page-six__logo--6 { top: 642px; left: 1156px; width: 135px; height: 31px; }
+
+/* ============================================================
+   PAGE 7 — Omnis voluptas assumenda
+   ============================================================ */
+.page-seven {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 768px;
+  margin: 0 auto;
+  background: #FDF2FF;
+  overflow: hidden;
+}
+
+.page-seven__eyebrow {
+  position: absolute;
+  top: 173px;
+  left: 135px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #333333;
+}
+
+.page-seven__title {
+  position: absolute;
+  top: 215px;
+  left: 135px;
+  width: 466px;
+  height: 128px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.page-seven__text {
+  position: absolute;
+  top: 366px;
+  left: 135px;
+  width: 470px;
+  height: 82px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.page-seven__button {
+  position: absolute;
+  top: 480px;
+  left: 135px;
+  width: 170px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #C86DD7;
+  border-radius: 999px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.page-seven__button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.page-seven__card {
+  position: absolute;
+}
+
+.page-seven__card-bg {
+  position: absolute;
+  top: 144px;
+  left: 705px;
+  width: 570px;
+  height: 544px;
+  background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+  border-radius: 3px;
+}
+
+.page-seven__photo {
+  position: absolute;
+  top: 112px;
+  left: 735px;
+  width: 570px;
+  height: 544px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.page-seven__card-title {
+  position: absolute;
+  top: 453px;
+  left: 783px;
+  width: 251px;
+  height: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+.page-seven__card-text {
+  position: absolute;
+  top: 494px;
+  left: 783px;
+  width: 474px;
+  height: 52px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.page-seven__author-avatar {
+  position: absolute;
+  top: 562px;
+  left: 783px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.page-seven__author-name {
+  position: absolute;
+  top: 574px;
+  left: 851px;
+  width: 160px;
+  height: 24px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* ============================================================
+   PAGE 8 — Contact Us
+   ============================================================ */
+.page-eight {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 768px;
+  margin: 0 auto;
+  background: url(./assets/p8-terrazzo.jpg) center/cover no-repeat;
+  overflow: hidden;
+}
+
+.page-eight__title {
+  position: absolute;
+  top: 135px;
+  left: 562px;
+  width: 316px;
+  height: 64px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  white-space: nowrap;
+  color: #333333;
+}
+
+.page-eight__text {
+  position: absolute;
+  top: 222px;
+  left: 295px;
+  width: 850px;
+  height: auto;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.page-eight__form {
+  position: absolute;
+  top: 276px;
+  left: 435px;
+  width: 570px;
+  height: 76px;
+}
+
+.page-eight__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 76px;
+  padding: 0 32px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.page-eight__input::placeholder {
+  color: #333333;
+  opacity: 0.5;
+}
+
+.page-eight__input:focus {
+  border-color: #C86DD7;
+}
+
+.page-eight__button {
+  position: absolute;
+  top: 14px;
+  left: 400px;
+  width: 170px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #C86DD7;
+  border: none;
+  border-radius: 999px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.page-eight__button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.page-eight__divider {
+  position: absolute;
+  top: 512px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  opacity: 0.1;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 130px;
+  margin: 0 auto;
+  background: transparent;
+  margin-top: -130px;
+}
+
+.footer__col {
+  position: absolute;
+  top: 0;
+}
+
+.footer__col--1 { left: 135px; }
+.footer__col--2 { left: 435px; }
+.footer__col--3 { left: 735px; }
+
+.footer__heading {
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link {
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  opacity: 0.5;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer__link:hover {
+  opacity: 1;
+}
+
+.footer__social {
+  position: absolute;
+  top: 50px;
+  left: 1035px;
+  display: flex;
+  gap: 8px;
+}
+
+.footer__social-link {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  transition: opacity 0.2s ease;
+}
+
+.footer__social-link:hover {
+  opacity: 0.8;
+}
+
+.footer__social-link img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__copyright {
+  position: absolute;
+  top: 96px;
+  left: 1035px;
+  width: 239px;
+  height: 24px;
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  opacity: 0.5;
+}
+
+/* ============================================================
+   RESPONSIVE LAYER
+   Breakpoints:
+     • Mobile   : 320px – 667px   (max-width: 667px)
+     • Tablet   : 668px – 1023px  (min-width: 668px) and (max-width: 1023px)
+     • Desktop  : 1024px and up   (original absolute-positioned layout)
+   ============================================================ */
+
+/* Prevent any stray horizontal overflow from absolute pixel positions
+   that might still poke out beyond the viewport on small screens. */
+html, body {
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   DESKTOP FINE-TUNE (1024px – 1439px)
+   The pixel-perfect layout targets 1440px. Below that, the right
+   edge of some sections would be clipped by overflow:hidden. These
+   small tweaks keep key content centered inside narrower desktops.
+   ============================================================ */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .hero,
+  .page-two,
+  .page-three,
+  .page-four,
+  .page-five,
+  .page-six,
+  .page-seven,
+  .page-eight,
+  .footer {
+    /* max-width already 1440; center inside viewport */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* ============================================================
+   TABLET + MOBILE SHARED (< 1024px)
+   Resets absolute positioning for all sections so content flows
+   in document order.
+   ============================================================ */
+@media (max-width: 1023px) {
+
+  /* ---------- HERO ---------- */
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding: 0 0 60px;
+  }
+  .header {
+    position: relative;
+    top: 0; left: 0; right: 0;
+    padding: 24px 40px 0;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .nav { display: none; }
+  .btn-outline { margin-left: auto; }
+
+  .hero-content {
+    position: relative;
+    top: 0; left: 0;
+    padding: 40px 40px 0;
+    max-width: 100%;
+  }
+  .hero-content h1 { max-width: 100%; }
+  .hero-content p  { max-width: 100%; }
+
+  .hero-illustration {
+    position: relative;
+    top: 0; left: 0;
+    width: min(600px, 90%);
+    margin: 30px auto 0;
+  }
+  .socials {
+    position: relative;
+    top: 0; left: 0;
+    margin: 24px 0 0 40px;
+  }
+  .bg-circle { display: none; }
+
+
+  /* ---------- PAGE 2 ---------- */
+  .page-two {
+    height: auto;
+    padding: 60px 40px;
+  }
+  .page-two__inner {
+    height: auto;
+  }
+  .page-two__content {
+    position: static;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto 40px;
+  }
+  .page-two__text {
+    width: 100%;
+    max-width: 470px;
+  }
+
+  .page-two__media {
+    position: relative;
+    width: 100%;
+    max-width: 705px;
+    margin: 0 auto;
+    min-height: auto;
+    inset: auto;
+    aspect-ratio: 705 / 576;
+  }
+  .page-two__rectangle {
+    position: absolute;
+    top: 32px; left: 0;
+    width: calc(100% - 33px);
+    height: calc(100% - 32px);
+  }
+  .page-two__bitmap {
+    position: absolute;
+    top: 0; left: 33px;
+    width: calc(100% - 33px);
+    height: calc(100% - 32px);
+  }
+  .page-two__play {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translate(-30%, -50%);
+    width: 100px;
+    height: 100px;
+  }
+
+
+  /* ---------- PAGE 3 ---------- */
+  .page-three {
+    height: auto;
+    padding: 60px 40px 80px;
+  }
+  .page-three__container {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+  .page-three__top {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .page-three__left,
+  .page-three__description {
+    width: 100%;
+    max-width: 100%;
+  }
+  .page-three__tabs {
+    flex-wrap: wrap;
+    gap: 20px 24px;
+  }
+  .page-three__gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  /* Fix flex:0 0 370px from desktop */
+  .page-three__card,
+  .page-three__card--double {
+    flex: 1 1 260px;
+    width: 100%;
+    max-width: 370px;
+    height: 272px;
+  }
+  .page-three__img-base,
+  .page-three__img-top {
+    width: 100%;
+  }
+
+
+  /* ---------- PAGE 4 ---------- */
+  .page-four {
+    height: auto;
+    padding: 60px 40px 80px;
+  }
+  .page-four__container {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+  .page-four__title,
+  .page-four__subtitle {
+    width: 100%;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-four__grid {
+    grid-template-columns: repeat(2, minmax(0, 322px));
+    column-gap: 40px;
+    row-gap: 48px;
+    margin-top: 56px;
+  }
+  .feature-card {
+    width: 100%;
+    max-width: 322px;
+    justify-self: center;
+  }
+  /* Flatten the "active" card emphasis on small screens so grid stays even */
+  .feature-card--active {
+    width: 100%;
+    max-width: 322px;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+  .feature-card__text {
+    width: 100%;
+  }
+  .page-four__circle { display: none; }
+
+
+  /* ---------- SEAM OVAL ---------- */
+  .seam-oval__circle {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    top: -40px;
+  }
+
+
+  /* ---------- PAGE 5 ---------- */
+  .page-five {
+    height: auto;
+    min-height: 820px;
+    padding: 60px 40px 80px;
+  }
+  .page-five__eyebrow,
+  .page-five__title,
+  .page-five__text,
+  .page-five__button {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  .page-five__content {
+    max-width: 560px;
+    margin: 420px auto 0;
+    text-align: center;
+    z-index: 5;
+    gap: 16px;
+    align-items: center;
+  }
+  .page-five__title {
+    font-size: 44px;
+    line-height: 52px;
+    margin-top: 12px;
+  }
+  .page-five__text {
+    margin-top: 4px;
+  }
+  .page-five__button {
+    margin-top: 16px;
+  }
+
+  /* Avatar cluster – centered at top, smaller */
+  .page-five__marble {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 340px;
+    height: 340px;
+  }
+  .page-five__avatar--1 { width: 140px; height: 140px; top: 60px;  left: calc(50% - 130px); }
+  .page-five__avatar--5 { width: 100px; height: 100px; top: 110px; left: calc(50% + 40px); }
+  .page-five__avatar--2 { width: 90px;  height: 90px;  top: 250px; left: calc(50% - 150px); }
+  .page-five__avatar--3 { width: 70px;  height: 70px;  top: 310px; left: calc(50% - 20px); }
+  .page-five__avatar--4 { width: 46px;  height: 46px;  top: 260px; left: calc(50% + 80px); }
+
+  .page-five__oval--corner {
+    width: 220px;
+    height: 220px;
+    top: auto;
+    bottom: -110px;
+    left: -100px;
+  }
+  .page-five__oval--bottom { display: none; }
+
+
+  /* ---------- PAGE 6 ---------- */
+  .page-six {
+    height: auto;
+    min-height: auto;
+    padding: 60px 40px 60px;
+    text-align: center;
+  }
+  .page-six__title,
+  .page-six__subtitle {
+    position: static;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .page-six__subtitle {
+    margin-top: 16px;
+    max-width: 570px;
+  }
+  .page-six__card {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    min-height: 240px;
+    margin: 24px auto 0;
+    padding: 28px 32px;
+    text-align: left;
+  }
+  .page-six__avatar,
+  .page-six__quote,
+  .page-six__name {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  .page-six__avatar {
+    display: block;
+    margin-bottom: 16px;
+  }
+  .page-six__quote {
+    margin-bottom: 12px;
+  }
+
+  /* Partner logos: inline-block centered row */
+  .page-six__logo {
+    position: static;
+    display: inline-block;
+    width: auto !important;
+    height: auto !important;
+    max-height: 36px;
+    max-width: 120px;
+    margin: 18px 14px 0;
+    vertical-align: middle;
+  }
+
+
+  /* ---------- PAGE 7 ---------- */
+  .page-seven {
+    height: auto;
+    min-height: auto;
+    padding: 60px 40px 80px;
+  }
+  .page-seven__eyebrow,
+  .page-seven__title,
+  .page-seven__text,
+  .page-seven__button {
+    position: static;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+  .page-seven__title {
+    font-size: 44px;
+    line-height: 52px;
+    margin-top: 12px;
+  }
+  .page-seven__text {
+    margin-top: 16px;
+  }
+  .page-seven__button {
+    display: inline-flex;
+    margin-top: 24px;
+  }
+
+  .page-seven__card {
+    position: relative;
+    width: 100%;
+    max-width: 570px;
+    height: 440px;
+    margin: 40px auto 0;
+  }
+  .page-seven__card-bg,
+  .page-seven__photo {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 360px;
+    top: auto;
+    left: auto;
+  }
+  .page-seven__card-bg { top: 30px; left: 0; }
+  .page-seven__photo   { top: 0;    left: 30px; }
+
+  .page-seven__card-title,
+  .page-seven__card-text,
+  .page-seven__author-avatar,
+  .page-seven__author-name {
+    position: absolute;
+    left: 60px;
+    width: auto;
+    height: auto;
+    max-width: calc(100% - 90px);
+  }
+  .page-seven__card-title    { top: 218px; }
+  .page-seven__card-text     { top: 258px; }
+  .page-seven__author-avatar { top: 322px; left: 60px; }
+  .page-seven__author-name   { top: 334px; left: 120px; }
+
+
+  /* ---------- PAGE 8 ---------- */
+  .page-eight {
+    height: auto;
+    min-height: auto;
+    padding: 60px 40px 80px;
+  }
+  .page-eight__title,
+  .page-eight__text {
+    position: static;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    white-space: normal;
+  }
+  .page-eight__text {
+    margin: 20px auto 0;
+    max-width: 570px;
+  }
+  .page-eight__form {
+    position: relative;
+    top: auto; left: auto;
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .page-eight__input {
+    position: static;
+    flex: 1 1 auto;
+    width: auto;
+    height: 56px;
+  }
+  .page-eight__button {
+    position: static;
+    flex: 0 0 auto;
+    width: 140px;
+    height: 56px;
+  }
+  .page-eight__divider {
+    position: static;
+    display: block;
+    margin-top: 40px;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    height: auto;
+    padding: 30px 40px;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+  }
+  .footer__col {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+  .footer__social,
+  .footer__copyright {
+    position: static;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    grid-column: 1 / -1;
+  }
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .footer__copyright {
+    text-align: center;
+    margin-top: 4px;
+  }
+
+} /* end tablet+mobile shared */
+
+
+/* ============================================================
+   MOBILE ONLY (≤ 667px)
+   Tightens padding, reduces type, stacks the form & footer.
+   ============================================================ */
+@media (max-width: 667px) {
+
+  /* ---------- HERO ---------- */
+  .header   { padding: 20px 16px 0; }
+  .logo     { font-size: 32px; line-height: 40px; }
+  .btn-outline { width: 130px; height: 40px; font-size: 14px; }
+
+  .hero-content      { padding: 30px 16px 0; }
+  .hero-content h1   { font-size: 44px; line-height: 48px; }
+  .hero-illustration { margin-top: 24px; }
+  .socials           { margin-left: 16px; }
+
+
+  /* ---------- PAGE 2 ---------- */
+  .page-two          { padding: 40px 16px; }
+  .page-two__title   { font-size: 36px; line-height: 42px; }
+  .page-two__line    { max-width: 161px; width: 100%; }
+  .page-two__play {
+    width: 72px;
+    height: 72px;
+    transform: translate(-20%, -50%);
+  }
+  .page-two__play-triangle {
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 16px;
+  }
+
+
+  /* ---------- PAGE 3 ---------- */
+  .page-three        { padding: 40px 16px 60px; }
+  .page-three__title { font-size: 36px; line-height: 42px; }
+  .page-three__tabs  { gap: 16px 20px; }
+  .page-three__card,
+  .page-three__card--double {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: 240px;
+  }
+
+
+  /* ---------- PAGE 4 ---------- */
+  .page-four         { padding: 40px 16px 60px; }
+  .page-four__title  {
+    font-size: 36px;
+    line-height: 42px;
+    width: 100%;
+  }
+  .page-four__subtitle { width: 100%; }
+  .page-four__grid {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+    margin-top: 40px;
+  }
+
+
+  /* ---------- PAGE 5 ---------- */
+  .page-five {
+    min-height: 720px;
+    padding: 40px 16px 60px;
+  }
+  .page-five__content {
+    max-width: 100%;
+    margin-top: 340px;
+  }
+  .page-five__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .page-five__marble {
+    width: 260px;
+    height: 260px;
+    top: 50px;
+  }
+  .page-five__avatar--1 { width: 110px; height: 110px; top: 40px;  left: calc(50% - 100px); }
+  .page-five__avatar--5 { width: 82px;  height: 82px;  top: 80px;  left: calc(50% + 20px); }
+  .page-five__avatar--2 { width: 74px;  height: 74px;  top: 190px; left: calc(50% - 115px); }
+  .page-five__avatar--3 { width: 58px;  height: 58px;  top: 235px; left: calc(50% - 20px); }
+  .page-five__avatar--4 { width: 40px;  height: 40px;  top: 195px; left: calc(50% + 60px); }
+
+  .page-five__oval--corner {
+    width: 160px;
+    height: 160px;
+    bottom: -80px;
+    left: -80px;
+  }
+
+
+  /* ---------- PAGE 6 ---------- */
+  .page-six         { padding: 40px 16px 50px; }
+  .page-six__title  { font-size: 36px; line-height: 42px; }
+  .page-six__card   { padding: 24px; }
+  .page-six__logo   {
+    max-height: 28px;
+    max-width: 100px;
+    margin: 12px 10px 0;
+  }
+
+
+  /* ---------- PAGE 7 ---------- */
+  .page-seven         { padding: 40px 16px 60px; }
+  .page-seven__title  {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .page-seven__card   { height: 380px; }
+  .page-seven__card-bg,
+  .page-seven__photo  { height: 300px; }
+
+  .page-seven__card-title,
+  .page-seven__card-text,
+  .page-seven__author-name {
+    left: 40px;
+    max-width: calc(100% - 60px);
+  }
+  .page-seven__card-title    { top: 190px; font-size: 20px; line-height: 28px; }
+  .page-seven__card-text     { top: 224px; font-size: 14px; line-height: 20px; }
+  .page-seven__author-avatar { top: 292px; left: 40px; width: 40px; height: 40px; }
+  .page-seven__author-name   { top: 304px; left: 92px; }
+
+
+  /* ---------- PAGE 8 ---------- */
+  .page-eight          { padding: 40px 16px 60px; }
+  .page-eight__title   {
+    font-size: 36px;
+    line-height: 42px;
+    white-space: normal;
+  }
+  .page-eight__form {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .page-eight__input {
+    height: 52px;
+    padding: 0 20px;
+  }
+  .page-eight__button {
+    width: 100%;
+    height: 48px;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+  .footer__list { align-items: center; }
+
+}
+
+
+/* ============================================================
+   NARROW DESKTOP (1024px – 1279px)
+   The original layout targets a 1440px canvas. Below ~1280px,
+   absolutely-positioned elements on the right side would be
+   clipped by the section's overflow:hidden. These rules pull
+   those elements back inside the viewport without changing the
+   overall desktop feel.
+   ============================================================ */
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  /* ---------- HERO ---------- */
+  .header {
+    left: 40px;
+    right: 40px;
+  }
+  .nav {
+    margin-left: auto;
+    gap: 22px;
+  }
+  .btn-outline {
+    margin-left: 22px;
+    width: 140px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .hero-content {
+    left: 40px;
+    top: 170px;
+  }
+  .hero-illustration {
+    left: auto;
+    right: -60px;
+    top: 120px;
+    width: 60%;
+    max-width: 700px;
+  }
+  .socials {
+    left: auto;
+    right: 40px;
+    top: auto;
+    bottom: 30px;
+  }
+  .bg-circle--top-small  { left: auto; right: -20px; top: 50px; }
+  .bg-circle--top-right  { left: auto; right: -60px; top: 170px; }
+  .bg-circle--bottom-left  { left: 35%; }
+  .bg-circle--bottom-right { left: auto; right: -140px; }
+
+
+  /* ---------- PAGE 2 ---------- */
+  .page-two__content {
+    left: 40px;
+    top: 120px;
+    width: 42%;
+    max-width: 430px;
+  }
+  .page-two__rectangle {
+    left: auto;
+    right: 0;
+    top: 128px;
+    width: 52%;
+    max-width: 705px;
+    height: 470px;
+  }
+  .page-two__bitmap {
+    left: auto;
+    right: -33px;
+    top: 96px;
+    width: 50%;
+    max-width: 672px;
+    height: 470px;
+  }
+  .page-two__play {
+    left: 46%;
+    top: 300px;
+    width: 96px;
+    height: 96px;
+  }
+
+
+  /* ---------- PAGE 3 ---------- */
+  .page-three__container {
+    width: calc(100% - 80px);
+    max-width: 1170px;
+  }
+  .page-three__description { width: auto; max-width: 48%; }
+  .page-three__left        { width: 40%; }
+  .page-three__gallery {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+  .page-three__card,
+  .page-three__card--double {
+    flex: 1 1 0;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+  }
+  .page-three__img-base,
+  .page-three__img-top {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------- PAGE 4 ---------- */
+  .page-four__container {
+    width: calc(100% - 80px);
+    max-width: 1122px;
+  }
+  .page-four__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 40px;
+  }
+  .feature-card,
+  .feature-card--active {
+    width: 100%;
+    max-width: 322px;
+    justify-self: center;
+  }
+  .feature-card--active {
+    height: auto;
+    padding: 24px 20px;
+  }
+  .feature-card__text { width: 100%; }
+
+
+  /* ---------- PAGE 5 ---------- */
+  .page-five__eyebrow,
+  .page-five__title,
+  .page-five__text,
+  .page-five__button {
+    left: 54%;
+  }
+  .page-five__title {
+    width: 40%;
+    max-width: 359px;
+  }
+  .page-five__text {
+    width: 40%;
+    max-width: 470px;
+  }
+  .page-five__marble    { left: 12%; }
+  .page-five__avatar--1 { left: 10%; }
+  .page-five__avatar--2 { left: 12%; }
+  .page-five__avatar--3 { left: 30%; }
+  .page-five__avatar--4 { left: 40%; }
+  .page-five__avatar--5 { left: 34%; }
+  .page-five__oval--corner { left: -80px; }
+  .page-five__oval--bottom { left: 44%; }
+
+
+  /* ---------- PAGE 6 ---------- */
+  .page-six__title    { left: 50%; transform: translateX(-50%); width: auto; }
+  .page-six__subtitle { left: 50%; transform: translateX(-50%); width: min(570px, 80%); }
+
+  /* Switch team cards to a centered 3-col grid inside the section */
+  .page-six__card {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 80px - 60px) / 3);
+    max-width: 370px;
+    height: 272px;
+    top: auto;
+    margin-top: 240px;
+  }
+  .page-six__card--1 { left: auto; margin-left: 40px; margin-right: 15px; }
+  .page-six__card--2 { left: auto; margin-right: 15px; }
+  .page-six__card--3 { left: auto; margin-right: 40px; }
+  /* Nullify subsequent-siblings margin-top after the first */
+  .page-six__card--2,
+  .page-six__card--3 { margin-top: 240px; }
+
+  /* Partner logos distributed across the bottom */
+  .page-six__logo {
+    top: auto;
+    bottom: 70px;
+    left: auto !important;
+  }
+  .page-six__logo--1 { left: 4% !important; }
+  .page-six__logo--2 { left: 18% !important; }
+  .page-six__logo--3 { left: 34% !important; }
+  .page-six__logo--4 { left: 48% !important; }
+  .page-six__logo--5 { left: 66% !important; }
+  .page-six__logo--6 { left: 82% !important; }
+
+
+  /* ---------- PAGE 7 ---------- */
+  .page-seven__eyebrow,
+  .page-seven__title,
+  .page-seven__text,
+  .page-seven__button {
+    left: 40px;
+  }
+  .page-seven__title { width: 45%; max-width: 466px; }
+  .page-seven__text  { width: 45%; max-width: 470px; }
+
+  /* Card wrapper is an empty zero-size block in the HTML. In narrow
+     desktop we want its children to position against the section,
+     so make the card itself span the whole section. */
+  .page-seven__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .page-seven__card-bg {
+    left: auto;
+    right: 40px;
+    width: 48%;
+    max-width: 570px;
+    height: 460px;
+    top: 144px;
+  }
+  .page-seven__photo {
+    left: auto;
+    right: 70px;
+    width: 48%;
+    max-width: 570px;
+    height: 460px;
+    top: 112px;
+  }
+  /* Overlay text sits on the photo (photo is right:70px, width 48%) */
+  .page-seven__card-title {
+    left: auto;
+    right: 110px;
+    top: 470px;
+    width: auto;
+    max-width: 42%;
+  }
+  .page-seven__card-text {
+    left: auto;
+    right: 110px;
+    top: 510px;
+    width: auto;
+    max-width: 42%;
+  }
+  .page-seven__author-avatar {
+    left: auto;
+    right: calc(48% + 30px);
+    top: 572px;
+  }
+  .page-seven__author-name {
+    left: auto;
+    right: calc(48% + 110px);
+    top: 584px;
+    width: auto;
+  }
+
+
+  /* ---------- PAGE 8 ---------- */
+  .page-eight__title { left: 50%; transform: translateX(-50%); width: auto; }
+  .page-eight__text  { left: 50%; transform: translateX(-50%); width: min(850px, 88%); }
+  .page-eight__form  { left: 50%; transform: translateX(-50%); }
+
+
+  /* ---------- FOOTER ---------- */
+  .footer__col--1 { left: 40px; }
+  .footer__col--2 { left: calc(40px + 22%); }
+  .footer__col--3 { left: calc(40px + 44%); }
+  .footer__social    { left: auto; right: 40px; top: 30px; }
+  .footer__copyright { left: auto; right: 40px; top: 76px; width: auto; }
+
+}
